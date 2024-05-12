@@ -1,9 +1,13 @@
 import './style.css';
-import { createIcons, Menu } from 'lucide';
+import { createIcons, Menu, X, UserRound, Mail, KeyRound } from 'lucide';
 
 createIcons({
   icons: {
     Menu,
+    X,
+    UserRound,
+    Mail,
+    KeyRound,
   },
 });
 
