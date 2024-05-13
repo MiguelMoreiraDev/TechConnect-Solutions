@@ -17,12 +17,16 @@ import Modal from './scripts/modal.js';
 const loginModal = new Modal(
   '[data-loginModal = "abrir"]',
   '[data-loginModal = "fechar"]',
-  '[data-loginModal = "container"]'
+  '[data-loginModal = "container"]',
+  '[data-loginModal = "toRegisterModal"]'
 );
 loginModal.init();
 const registerModal = new Modal(
   '[data-registerModal = "abrir"]',
   '[data-registerModal = "fechar"]',
-  '[data-registerModal = "container"]'
+  '[data-registerModal = "container"]',
+  '[data-registerModal = "toLoginModal"]'
 );
 registerModal.init();
+
+

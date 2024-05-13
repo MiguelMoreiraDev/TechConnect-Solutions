@@ -41,7 +41,10 @@
           </h1>
           <p class="text-zinc-500 text-base mb-8">
             Já possuí uma conta? Clique aqui para fazer
-            <a href="#" class="text-zinc-950 underline underline-offset-4"
+            <a
+              href="#"
+              class="text-zinc-950 underline underline-offset-4"
+              data-registerModal="toLoginModal"
               >login</a
             >
           </p>
@@ -123,6 +126,7 @@
       class="bg-zinc-950/50 fixed hidden w-full h-screen flex z-[1000] items-center justify-center font-[Poppins] p-4"
     >
       <div
+        data-loginModal="modal"
         class="bg-zinc-50 flex flex-col p-4 md:flex-row md:gap-6 animate-slideDown"
       >
         <div class="">
@@ -144,7 +148,10 @@
           </h1>
           <p class="text-zinc-500 text-base mb-8">
             Ainda náo possui uma conta? Clique aqui para se
-            <a href="#" class="text-zinc-950 underline underline-offset-4"
+            <a
+              href="#"
+              class="text-zinc-950 underline underline-offset-4"
+              data-loginModal="toRegisterModal"
               >cadastrar</a
             >
           </p>
@@ -252,7 +259,7 @@
           </li>
         </ul>
         <div
-          class="flex flex-col md:flex-row md:items-center gap-4 items-start"
+          class="flex flex-col md:flex-row md:items-center gap-3 items-start"
         >
           <button
             data-loginModal="abrir"
@@ -271,7 +278,7 @@
 
       <button
         data-menuhamburguer="button"
-        class="hover:transition-transform hover:duration-300 md:hidden"
+        class="transition-transform duration-300 hover:scale-110 hover:transition-transform hover:duration-300 md:hidden"
       >
         <i data-lucide="menu"></i>
       </button>
