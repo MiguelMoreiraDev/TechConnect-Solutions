@@ -3,6 +3,7 @@ export default class Modal {
     this.abrirModal = document.querySelector(abrirModal);
     this.fecharModal = document.querySelector(fecharModal);
     this.container = document.querySelector(container);
+
     this.eventos = ['click', 'touchstart'];
 
     this.handleAbrirModal = this.handleAbrirModal.bind(this);
@@ -23,6 +24,11 @@ export default class Modal {
     this.eventos.forEach((evento) => {
       this.abrirModal.addEventListener(evento, this.handleAbrirModal);
       this.fecharModal.addEventListener(evento, this.handleFecharModal);
+      document.documentElement.addEventListener(evento, (event) => {
+        if (event.target === this.container) {
+          this.container.classList.add('hidden');
+        }
+      });
     });
   }
 
